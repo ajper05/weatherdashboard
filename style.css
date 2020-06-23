@@ -8,8 +8,13 @@
 
 
 .btn {
-    border-left: 1px solid black;
     background-color: #06AED5;
     color: white;
   }
 
+.cityBtn {
+    display:block;
+    border-radius: 25px;
+    border-color: deepskyblue;
+    
+}

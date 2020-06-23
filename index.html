@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class= "container">
@@ -16,8 +17,8 @@
             <div class = "row">
                 <div class = "col-4" id="searchBar">
                     <form class="form-inline mr-auto">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn blue-gradient btn-rounded btn-sm my-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" id="userCity" aria-label="Search">
+                        <button class="btn blue-gradient btn-rounded btn-sm my-0" id ="weatherSearch" type="submit">Search</button>
                 </div>
                 <div class ="col-8" id="currentWeather">
                     <!-- Current selected city weather will appear here -->
@@ -32,7 +33,6 @@
                     <br>
                     <h3>5 Day Forecast:</h3>
                     <br>
-                    card test  card test  card test card test
                 </div>
             </div>
 
