@@ -42,6 +42,12 @@
 
 }
 
-.citysearchBtns{
-    display: block;
+
+
+#fiveDayForecast{
+    justify-content: center;
+}
+
+.card  {
+    margin: 15px;
 }

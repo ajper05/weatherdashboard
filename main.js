@@ -104,18 +104,27 @@ function buttonWeather(){
 }
     
 function fiveDay(city){
-    fiveDayQuery = "https://api.openweathermap.org/data/2.5/forecast?q="+city+apiKey+"&cnt=5";
+    fiveDayQuery = "https://api.openweathermap.org/data/2.5/forecast?q="+city+apiKey;
 
     $.ajax({
         url: fiveDayQuery,
         method: "GET"
     }).then(function(response){
-        console.log(response)
-        let fiveDaybar = $("#5dayForecast");
-        let createCards = $("<div class='card-deck'>");
-        fiveDaybar.append(createCards)
+        var count = 1
+            for(i=0; i < response.list.length; i += 8){
+                let date = moment(response.list[i].dt_txt).format("LL");
+                let weatherIcon = response.list[i].weather[0].icon;
+                let temp = response.list[i].main.temp
+                    
+                $("#day" + count).text(date);
+                $("#weatherIcon" + count).attr("src", "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png");
+                $(".temp" + count).text("Temp: "+ temp.toFixed(1) + "F");
+                $(".humid" + count).text("Humidity: " + response.list[i].main.humidity + "%"); 
+                count++;
+            }
         
     })
 }
+
 
 $(document).on("click", ".cityBtn", buttonWeather);

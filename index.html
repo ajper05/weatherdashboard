@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
+    
     <body>
         <div class= "container">
             <div class = row>
@@ -41,15 +42,52 @@
                     
                 </div>
             </div>
-            <div class = "row" id="5day">
-                <div class = "col-4" id="spacer"></div>
-                <br>
-                <div class = "col-8" id="5dayForecast">
+            <div class = "row" id="fiveDayForecast">
+                <div class="card text-white bg-dark" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="day1"></h4>
+                        <img id="weatherIcon1"/>
                     <br>
-                    <h3>5 Day Forecast:</h3>
+                    <p class="card-text temp1">Temp: </p>
+                    <p class="humid1">Humidity: <p>
+                    </div>
+                </div>  
+                <div class="card text-white bg-dark" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="day2"></h4>
+                        <img id="weatherIcon2"/>
                     <br>
-                    
+                    <p class="card-text temp2">Temp: </p>
+                    <p class="humid2">Humidity: </p>
+                    </div>
                 </div>
+                <div class="card text-white bg-dark" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="day3"></h4>
+                        <img id="weatherIcon3"/>
+                    <br>
+                    <p class="card-text temp3">Temp: </p>
+                    <p class="humid3">Humidity: </p>
+                    </div>
+                </div>
+                <div class="card text-white bg-dark" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="day4"></h4>
+                        <img id="weatherIcon4"/>
+                    <br>
+                    <p class="card-text temp4">Temp:</p>
+                    <p class="humid4">Humidity: </p>
+                    </div>
+                </div>
+                <div class="card text-white bg-dark" style="max-width: 15rem;">
+                    <div class="card-body">
+                        <h4 class="card-title" id="day5"></h4>
+                        <img id="weatherIcon5"/>
+                    <br>
+                    <p class="card-text temp5">Temp: </p>
+                    <p class="humid5">Humidity: </p>
+                    </div>
+                </div> 
             </div>
 
         </div>
