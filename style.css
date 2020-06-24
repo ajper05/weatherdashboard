@@ -18,3 +18,30 @@
     border-color: deepskyblue;
     
 }
+
+/* UV Index colors based on severity */
+
+.uvLow {
+    border-radius: 25px;
+    background-color: greenyellow;
+}
+
+.uvModerate {
+    border-radius: 25px;
+    background-color: yellow;
+}
+
+.uvHigh{
+    border-radius: 25px;
+    background-color: red;
+}
+
+.uvExtreme {
+    border-radius: 25px;
+    background-color: purple;
+
+}
+
+.citysearchBtns{
+    display: block;
+}
