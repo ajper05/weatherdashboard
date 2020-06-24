@@ -1,7 +1,7 @@
 let cities =[]
 let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 let apiKey = "&appid=fb96e9e4a08a704e7e522a72ff158382&units=imperial" // also adding on the parameter to call for imperial unit measurements to get back farenheit temps
-
+$("#fiveDayForecast").hide()
 //Takes cities added to the empty cities array and creates buttons for them in the weather search history
 function createButtons(){
     for (i = 0; i < cities.length;i++){
@@ -124,6 +124,7 @@ function fiveDay(city){
             }
         
     })
+    $("#fiveDayForecast").show()
 }
 
 
